@@ -20,7 +20,7 @@ export class HomePage {
     this.speechRecognition.hasPermission()
       .then((haspermission: boolean) => {
 
-        if (!hasPermission) {
+        if (!haspermission) {
           this.speechRecognition.requestPermission()
             .then(
               () => console.log('Granted'),
